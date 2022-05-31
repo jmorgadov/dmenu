@@ -696,12 +696,12 @@ setup(void)
 			mw = wa.width;
 		}
 	}
-	for (item = items; item && item->text; ++item) {
-		if ((tmp = textw_clamp(item->text, mw/3)) > inputw) {
-			if ((inputw = tmp) == mw/3)
-				break;
-		}
-	}
+	/* for (item = items; item && item->text; ++item) { */
+	/* 	if ((tmp = textw_clamp(item->text, mw/3)) > inputw) { */
+	/* 		if ((inputw = tmp) == mw/3) */
+	/* 			break; */
+	/* 	} */
+	/* } */
 	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
 	inputw = mw / 3; /* input width: ~33% of monitor width */
 	match();
